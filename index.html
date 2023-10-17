@@ -163,6 +163,7 @@
         </div>
       </div>
     </div>
+
     <div class="topic" id="topic-1">
       <h1>Interesting Facts</h1>
     </div>
@@ -249,6 +250,7 @@
         </div>
       </div>
     </div>
+
     <div class="topic" id="topic-2">
       <h1>Travel Destinations</h1>
     </div>
@@ -393,6 +395,49 @@
         </div>
       </div>
     </div>
+
+    <div class="topic" id="topic-3">
+      <h1>Traditional dishes</h1>
+    </div>
+    <div class="topic" id="food-1">
+      <h1>Khuushuur</h1>
+    </div>
+    <div class="topic" id="food-2">
+      <h1>Bituu soup</h1>
+    </div>
+    <div class="topic" id="food-3">
+      <h1>Suutei budaa</h1>
+    </div>
+    <div class="topic" id="food-4">
+      <h1>Suutei tsai</h1>
+    </div>
+    <div class="topic" id="food-5">
+      <h1>Buuz</h1>
+    </div>
+    <div class="topic" id="food-6">
+      <h1>Aaruul</h1>
+    </div>
+
+    <div id="image-track-3" data-mouse-down-at="0" data-prev-percentage="0">
+      <div class="card">
+        <video controls class="image" src="img/food-1.mp4" draggable="false"></video>
+      </div>
+      <div class="card">
+        <video controls class="image" src="img/food-2.mp4" draggable="false"></video>
+      </div>
+      <div class="card">
+        <video controls class="image" src="img/food-3.mp4" draggable="false"></video>
+      </div>
+      <div class="card">
+        <video controls class="image" src="img/food-4.mp4" draggable="false"></video>
+      </div>
+      <div class="card">
+        <video controls class="image" src="img/food-5.mp4" draggable="false"></video>
+      </div>
+      <div class="card">
+        <video controls class="image" src="img/food-6.mp4" draggable="false"></video>
+      </div>
+    </div>
     
   </body>
   <style>
@@ -424,6 +469,60 @@
       position: absolute;
       left: 50%;
       top: 135%;
+      color: white;
+    }
+
+    #topic-3 {
+      position: absolute;
+      left: 50%;
+      top: 190%;
+      color: white;
+    }
+
+    #food-1 {
+      position: absolute;
+      left: 50%;
+      top: 195%;
+      color: white;
+    }
+
+    #food-2 {
+      position: absolute;
+      left: 95%;
+      top: 195%;
+      width: max-content;
+      color: white;
+    }
+
+    #food-3 {
+      position: absolute;
+      left: 138%;
+      top: 195%;
+      width: max-content;
+      color: white;
+    }
+
+    #food-4 {
+      position: absolute;
+      left: 183%;
+      top: 195%;
+      width: max-content;
+      color: white;
+    }
+
+    #food-5 {
+      position: absolute;
+      left: 227%;
+      top: 195%;
+      width: max-content;
+      color: white;
+    }
+
+    #food-6 {
+      position: absolute;
+      left: 270%;
+      top: 195%;
+      width: max-content;
       color: white;
     }
 
@@ -464,6 +563,16 @@
       user-select: none;
     }
 
+    #image-track-3 {
+      display: flex;
+      gap: 4vmin;
+      position: absolute;
+      left: 50%;
+      top: 215%;
+      transform: translate(0%, -50%); 
+      user-select: none;
+    }
+
     #image-track div {
       width: 40vmin;
       height: 56vmin;
@@ -477,6 +586,12 @@
     }
 
     #image-track-2 div {
+      width: 40vmin;
+      height: 56vmin;
+      overflow: hidden;
+    }
+
+    #image-track-3 div {
       width: 40vmin;
       height: 56vmin;
       overflow: hidden;
@@ -497,6 +612,13 @@
     }
 
     #image-track-2 div > .image {
+      width: 40vmin;
+      height: 56vmin;
+      object-fit: cover;
+      object-position: 100% center;
+    }
+
+    #image-track-3 div > .image {
       width: 40vmin;
       height: 56vmin;
       object-fit: cover;
