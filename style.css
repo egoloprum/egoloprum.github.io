@@ -1,0 +1,356 @@
+:root {
+   --clr-background: #1a1b1b;
+   --clr-topic-white: #dddddd;
+   --clr-day-green: #497a60;
+   --clr-topic-green: #60b786;
+   --clr-day-background: #222c27;
+   --clr-day-color: #9ca49f;
+
+   --main-margin-inline: 4rem;
+}
+
+body {
+   margin: 0;
+   background: var(--clr-background);
+   font-family: 'Courier New', Courier, monospace;
+}
+body p {
+   margin: 0;
+}
+body hr {
+   border-style: inset;
+   border-width: .1px;
+}
+.main-wallpaper {
+   width: 100%;
+   height: 300px;
+   overflow-y: hidden;
+   outline: 2px solid white;
+}
+.main-wallpaper img {
+   width: 100%;
+}
+.main-topic {
+   font-size: 28px;
+   font-weight: 600;
+   margin-top: 6rem;
+   margin-inline: var(--main-margin-inline);
+   color: var(--clr-topic-white);
+}
+
+.main-body {
+   display: flex;
+   align-items: flex-start;
+   column-gap: 2rem;
+   row-gap: 1rem;
+   margin-inline: var(--main-margin-inline);
+}
+.main-body > div {
+   width: 100%;
+}
+.main-body > div:nth-child(2) {
+   width: 200%;
+}
+
+.main-body > div > div {
+   border: 1px solid white;
+   color: white;
+}
+.main-grid-1 {
+   display: flex;
+   flex-direction: column;
+   column-gap: 2rem;
+   row-gap: 1rem;
+}
+.main-grid-2 {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 2rem;
+   row-gap: 1rem;
+}
+.main-grid-3 {
+   display: flex;
+   flex-direction: column;
+   column-gap: 2rem;
+   row-gap: 1rem;
+}
+
+.left-pic img {
+   width: 100%;
+}
+
+.day {
+   padding: 1rem;
+   max-height: 150px;
+   row-gap: 1rem;
+   background: var(--clr-day-background);
+}
+.day-type {
+   margin-bottom: .5rem;
+}
+.day-type > span {
+   color: var(--clr-day-green);
+   font-weight: 600;
+}
+
+.curriculum > p {
+   margin-block: .25rem;
+   margin-left: .5rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: .4rem;
+   color: var(--clr-topic-white);
+   font-weight: 550;
+}
+.curriculum > p input {
+   width: 15px;
+   height: 15px;
+   accent-color: rgb(0, 255, 0);
+}
+.inspiration {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.inspiration > p {
+   color: var(--clr-topic-green);
+   font-weight: 600;
+   font-size: 20px;
+   font-style: italic;
+   margin-bottom: .5rem;
+}
+.inspire-text {
+   border: 1px solid var(--clr-day-color);
+   display: flex;
+   padding: .5rem;
+   font-size: 14px;
+   font-style: italic;
+}
+
+.weekly-to-do > p {
+   color: var(--clr-topic-green);
+   text-transform: uppercase;
+   font-weight: 600;
+   margin-top: 1rem;
+}
+.weekly-to-do .to-do-list {
+   margin-left: 1rem;
+}
+.weekly-to-do .to-do-list > p {
+   margin-block: .5rem;
+   width: fit-content;
+   cursor: pointer;
+}
+
+/* navigation */
+.navigation {
+   display: flex;
+   flex-direction: column;
+   column-gap: 2rem;
+   row-gap: 1rem;
+}
+.nav-pic {
+
+   overflow: hidden;
+}
+.nav-pic img {
+   width: 100%;
+}
+.nav-bar {
+   background: var(--clr-day-background);
+   padding-block: 1rem;
+   padding-inline: .5rem;
+   font-weight: 600;
+}
+.nav-list > p {
+   margin-block: .5rem;
+}
+.nav-list > p span {
+   border-left: 1px solid var(--clr-topic-white);
+   padding-left: .5rem;
+   margin-left: .5rem;
+}
+
+/* main-bottom */
+
+.main-bottom {
+   margin: var(--main-margin-inline);
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 8rem;
+   row-gap: 1rem;
+   grid-auto-rows: minmax(200px, auto);
+}
+.main-bottom > * {
+   border: 1px solid white;
+}
+
+.main-brain-dump {
+   color: white;
+}
+.brain-topic {
+   background: var(--clr-day-background);
+   color: var(--clr-topic-green);
+   font-weight: 600;
+   padding-block: .5rem;
+   padding-left: .5rem;
+   font-style: italic;
+}
+.brain-list {
+   display: flex;
+   gap: .5rem;
+   padding-block: .5rem;
+   border-bottom: 1px solid #b1b0b0;
+   margin-bottom: 1rem;
+}
+.brain-list > p {
+   cursor: pointer;
+   color: var(--clr-day-color);
+   font-weight: 550;
+}
+.brain-list > p:hover {
+   color: var(--clr-topic-white);
+}
+.brain-note {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 1rem;
+   row-gap: 1rem;
+   grid-auto-rows: minmax(350px, auto);
+}
+.brain-note > * {
+   border: 1px solid white;
+}
+.note {
+   display: flex;
+   flex-direction: column;
+}
+.note-top {
+   font-size: 14px;
+   background: #302c2c;
+   height: 100%;
+}
+.note-top ul {
+   margin: 0;
+   padding-left: 2rem;
+   padding-right: .5rem;
+}
+.note-top > ul li {
+   margin-block: .5rem;
+}
+.note-bot {
+   background: #282424;
+   padding: .5rem;
+   font-size: 14px;
+}
+.note-bot > p {
+   margin-block: .25rem;
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+}
+.note-bot p input {
+   width: 15px;
+   height: 15px;
+   accent-color: rgb(0, 255, 0);;
+}
+
+.new-note {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.new-note p {
+   color: var(--clr-day-color);
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   cursor: pointer;
+}
+.new-note p:hover {
+   color: var(--clr-topic-white);
+}
+.new-note p span:first-child {
+   font-size: 24px;
+}
+
+.main-weather {
+   color: white;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   padding-block: 2rem;
+   padding-inline: 1rem;
+}
+.main-weather i {
+   font-size: 2.5rem;
+}
+
+.weather-top {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   gap: 1rem;
+}
+.weather-top > div {
+   text-align: center;
+   font-weight: 550;
+}
+.weather-top .city {
+   text-transform: uppercase;
+}
+.weather-top .current-date {
+   font-weight: 500;
+}
+.weather-temp {
+   font-size: 24px;
+}
+.days-list {
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+.days-list li {
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   font-weight: 550;
+}
+.days-list li i {
+   margin-block: .5rem;
+}
+
+@media (max-width: 1000px) {
+   .main-body {
+      flex-direction: column;
+   }
+   .main-body > div:nth-child(2) {
+      width: 100%;
+   }
+   .main-bottom {
+      margin-top: 2rem;
+      column-gap: 2rem;
+   }
+}
+@media (max-width: 768px) {
+   .main-bottom {
+      grid-template-columns: 1fr;
+   }
+}
+@media (max-width: 550px) {
+   :root {
+      --main-margin-inline: 1rem;
+   }
+   .main-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 2rem;
+      row-gap: 1rem;
+   }
+   .brain-note {
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
