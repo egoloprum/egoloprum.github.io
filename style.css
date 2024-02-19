@@ -29,6 +29,7 @@ body hr {
 }
 .main-wallpaper img {
    width: 100%;
+   height: 100%;
 }
 .main-topic {
    font-size: 28px;
@@ -181,6 +182,7 @@ body hr {
    column-gap: 8rem;
    row-gap: 1rem;
    grid-auto-rows: minmax(200px, auto);
+   margin-bottom: 4rem;
 }
 .main-bottom > * {
    border: 1px solid white;
@@ -327,6 +329,14 @@ body hr {
    .main-body {
       flex-direction: column;
    }
+   .main-grid-1 {
+      flex-direction: row;
+   }
+   .main-grid-1 > * {
+      width: 100%;
+      max-height: 500px;
+      overflow-y: hidden;
+   }
    .main-body > div:nth-child(2) {
       width: 100%;
    }
@@ -343,6 +353,9 @@ body hr {
 @media (max-width: 550px) {
    :root {
       --main-margin-inline: 1rem;
+   }
+   .main-grid-1 {
+      flex-direction: column;
    }
    .main-grid-2 {
       display: grid;
