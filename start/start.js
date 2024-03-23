@@ -20,6 +20,9 @@ login_btn.addEventListener("click", function() {
 
    console.log(name.value, password.value);
 
-   
+   console.log(window.location.href);
+   let current_url = window.location.href.split('/');
+   current_url = current_url[0] + "/index.html";
+   window.location.href = current_url;
 
 })
