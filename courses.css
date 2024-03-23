@@ -216,4 +216,7 @@ body hr {
       padding: 1rem;
       padding-inline: 2rem;
    }
+   .modal {
+      position: fixed;
+   }
 }
