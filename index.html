@@ -3,382 +3,58 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>School Planner</title>
-
-      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <link rel="stylesheet" href="style.css">
+      <title>Document</title>
+      <link rel="stylesheet" href="index.css">
    </head>
    <body>
-      <div class="main-wallpaper">
-         <img src="images/main/background.webp" alt="">
-      </div>
 
-      <div class="main-topic">
-         <p>School Planner</p>
-         <hr><hr>
-      </div>
+      <div class="login">
+         <h1>Login</h1><hr>
 
-      <div class="main-body">
-         <div class="main-grid-1">
-            <div class="sidebar">
-               <p><a href="courses.html">Courses</a></p>
-               <p>To-do list</p>
-               <p>Manual</p>
-               <p>Calendar</p>
-               <p>Review</p>
-               <p>Assignments</p>
-            </div>
-            <div class="left-pic">
-               <img src="images/main/giphy.gif" alt="">
-            </div>
+         <div class="input">
+            <label>Username</label>
+            <input type="text" placeholder="Username" id="login-username" required>
          </div>
 
-         <div class="main-grid-2">
-            <div class="day">
-               <div class="day-type">
-                  <img src="" alt="">
-                  <span>monday</span>
-               </div>
-               <div class="curriculum">
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">7:30</span>
-                     <span class="lesson-type">Science</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">9:55</span>
-                     <span class="lesson-type">Math</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:00</span>
-                     <span class="lesson-type">Break</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:55</span>
-                     <span class="lesson-type">Social</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">12:50</span>
-                     <span class="lesson-type">Music</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-               </div>
+         <div class="input">
+            <label>Password</label>
+            <input type="password" placeholder="Password" id="login-password" required>
+         </div>
+
+         <div class="link-a">
+            <a href="../forgot-pass/instruction.html" target="_blank">Forgot password ?</a>
+         </div>
+
+         <button class="login-btn">Log in</button>
+
+         <p class="signup-a">
+            <span>New to us ?</span>
+         </p>
+
+      </div>
+
+      <div class="signup">
+         <h1>Sign up</h1><hr>
+
+         <form action="">
+            <div class="input">
+               <label>Username</label>
+               <input type="text" placeholder="Username" id="signup-username" required>
             </div>
    
-            <div class="day">
-               <div class="day-type">
-                  <img src="" alt="">
-                  <span>Tuesday</span>
-               </div>
-               <div class="curriculum">
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">7:30</span>
-                     <span class="lesson-type">Free Time</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">9:55</span>
-                     <span class="lesson-type">PE</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:00</span>
-                     <span class="lesson-type">Break</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:55</span>
-                     <span class="lesson-type">Biology</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">12:50</span>
-                     <span class="lesson-type">English</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-               </div>
-            </div>
-            <div class="day">
-               <div class="day-type">
-                  <img src="" alt="">
-                  <span>Wednesday</span>
-               </div>
-               <div class="curriculum">
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">7:30</span>
-                     <span class="lesson-type">Biology</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">9:55</span>
-                     <span class="lesson-type">Social</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:00</span>
-                     <span class="lesson-type">Break</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:55</span>
-                     <span class="lesson-type">PE</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">12:50</span>
-                     <span class="lesson-type">Math</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-               </div>
-            </div>
-            <div class="day">
-               <div class="day-type">
-                  <img src="" alt="">
-                  <span>Thursday</span>
-               </div>
-               <div class="curriculum">
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">7:30</span>
-                     <span class="lesson-type">Science</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">9:55</span>
-                     <span class="lesson-type">Math</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:00</span>
-                     <span class="lesson-type">Break</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:55</span>
-                     <span class="lesson-type">Social</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">12:50</span>
-                     <span class="lesson-type">Biology</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-               </div>
-            </div>
-            <div class="day">
-               <div class="day-type">
-                  <img src="" alt="">
-                  <span>Friday</span>
-               </div>
-               <div class="curriculum">
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">7:30</span>
-                     <span class="lesson-type">PE</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">9:55</span>
-                     <span class="lesson-type">English</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:00</span>
-                     <span class="lesson-type">Break</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">11:55</span>
-                     <span class="lesson-type">Social</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-                  <p>
-                     <input type="checkbox" name="" id="">
-                     <span class="cur-time">12:50</span>
-                     <span class="lesson-type">Music</span>
-                     <img src="" class="lesson-emoji" alt="">
-                  </p>
-               </div>
+            <div class="input">
+               <label>Password</label>
+               <input type="password" placeholder="Password" id="signup-password" required>
             </div>
    
-            <div class="inspiration">
-               <p>Inspiration</p>
-               <div class="inspire-text">
-                  <img src="" alt="">
-                  <p>"never forget why you started this journey."</p>
-               </div>
-            </div>
-         </div>
+            <button class="signup-btn">Sign up</button>
+         </form>
 
-         <div class="main-grid-3">
-            <div class="weekly-to-do">
-               <p class="to-do-topic">weekly-to-do's</p><hr>
-               <div class="to-do-list">
-                  <p>
-                     <img src="" alt="">
-                     <span class="to-do-day">monday</span>
-                  </p>
-                  <p>
-                     <img src="" alt="">
-                     <span class="to-do-day">tuesday</span>
-                  </p>
-                  <p>
-                     <img src="" alt="">
-                     <span class="to-do-day">wednesday</span>
-                  </p>
-                  <p>
-                     <img src="" alt="">
-                     <span class="to-do-day">thursday</span>
-                  </p>
-                  <p>
-                     <img src="" alt="">
-                     <span class="to-do-day">friday</span>
-                  </p>
-                  <p>
-                     <img src="" alt="">
-                     <span class="to-do-day">saturday</span>
-                  </p>
-                  <p>
-                     <img src="" alt="">
-                     <span class="to-do-day">sunday</span>
-                  </p>
-               </div><hr>
-            </div>
-            
-            <div class="navigation">
-               <div class="nav-pic">
-                  <img src="images/main/sun.gif" alt="">
-               </div>
-
-               <div class="nav-bar">
-                  <img src="" alt="">
-                  <span>navigation</span>
-               </div>
-
-               <div class="nav-list">
-                  <p><img src="" alt=""><span>calendar view</span></p>
-                  <p><img src="" alt=""><span>university</span></p>
-                  <p><img src="" alt=""><span>library</span></p>
-                  <p><img src="" alt=""><span>extras</span></p>
-               </div>
-            </div>
-         </div>
-
+         <p class="login-a">
+            <span>Already got account ?</span>
+         </p>
       </div>
 
-      <div class="main-bottom">
-         <div class="main-weather">
-            <div class="weather-top">
-               <div class="city">
-                  <p class="current-location">Moscow, RU</p>
-                  <p class="current-date">Weather</p>
-               </div>
-               <div class="weather-icon">
-                  <i class='bx bx-sun'></i>
-               </div>
-               <div class="weather-data">
-                  <p class="weather-temp">25°C</p>
-                  <p class="weather-type">Sunny</p>
-               </div>
-            </div>
-
-            <div class="weather-bot">
-               <ul class="days-list">
-                  <li>
-                     <i class='bx bx-cloud'></i>
-                     <span>Sat</span>
-                     <span class="day-temp"></span>
-                  </li>
-                  <li>
-                     <i class='bx bx-sun'></i>
-                     <span>Sun</span>
-                     <span class="day-temp"></span>
-                  </li>
-                  <li>
-                     <i class='bx bx-cloud-rain'></i>
-                     <span>Mon</span>
-                     <span class="day-temp"></span>
-                  </li>
-                  <li>
-                     <i class='bx bx-cloud-drizzle'></i>
-                     <span>Tue</span>
-                     <span class="day-temp"></span>
-                  </li>
-                  <li>
-                     <i class='bx bx-cloud-drizzle'></i>
-                     <span>Tue</span>
-                     <span class="day-temp"></span>
-                  </li>
-               </ul>
-            </div>
-
-         </div>
-
-         <div class="main-brain-dump">
-            <div class="brain-topic">
-               Brain dump
-            </div>
-
-            <div class="brain-list">
-               <p>
-                  <img src="" alt="">
-                  <span>All</span>
-               </p>
-               <p>
-                  <img src="" alt="">
-                  <span>Archive</span>
-               </p>
-            </div>
-
-            <div class="brain-note">
-               <div class="note">
-                  <div class="note-top">
-                     <ul>
-                        <li>Finish reading Chapter 7 for Biology by Wednesday</li>
-                        <li>Research topics for History term paper</li>
-                        <li>Math homework due on Friday</li>
-                     </ul>
-                  </div>
-                  <div class="note-bot">
-                     <p><img src="" alt=""><span>8th sep</span></p>
-                     <p><input type="checkbox"><span>Archive</span></p>
-                  </div>
-               </div>
-               <div class="new-note">
-                  <p>
-                     <span>+</span>
-                     <span>New</span>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <script src="script.js"></script>
+      <script src="index.js"></script>
    </body>
 </html>
