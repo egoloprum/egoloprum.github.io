@@ -21,24 +21,24 @@ body hr {
    border-width: .1px;
 }
 
-.todo-wrapper {
+.each-wrapper {
    margin-block: 4rem;
    margin-inline: var(--main-margin-inline);
    color: white;
 }
 
-.todo-topic {
+.each-topic {
    padding: 1rem;
    font-size: 20px;
    font-weight: 600;
    border: 1px solid white;
 }
-.todo-topic > p {
+.each-topic > p {
    display: flex;
    align-items: center;
    gap: 1rem;
 }
-.todo-topic > p i {
+.each-topic > p i {
    font-size: 30px;
 }
 

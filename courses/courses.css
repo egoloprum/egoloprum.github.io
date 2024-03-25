@@ -89,6 +89,9 @@ body hr {
    flex-direction: column;
    border: 1px solid white;
    cursor: pointer;
+   position: relative;
+   color: var(--clr-topic-white);
+   text-decoration: none;
 }
 .course:hover {
    filter: brightness(115%);
@@ -143,8 +146,33 @@ body hr {
    transform: translate(-50%, 0%);
    width: 100%;
    max-width: 700px;
+   max-height: 500px;
+   height: 100%;
+   overflow-y:auto;
    background: var(--clr-dark);
    display: none;
+}
+
+.modal input {
+   outline: none !important;
+   border: none;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 14px;
+   color: var(--clr-day-color);
+   background: var(--clr-dark);
+   width: 100%;
+}
+.icons-choice {
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+}
+.icons-choice > * {
+   font-size: 20px;
+   cursor: pointer;
+}
+.icons-choice > *:hover {
+   filter: brightness(200%);
 }
 
 .modal-body {
@@ -249,8 +277,5 @@ body hr {
    .modal-body {
       padding: 1rem;
       padding-inline: 2rem;
-   }
-   .modal {
-      position: fixed;
    }
 }
